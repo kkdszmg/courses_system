@@ -1,3 +1,4 @@
+# 账号 密码 角色(0:管理员, 1:学生, 2:教师)
 admin 123456 0
-student1 abcdef 1
-teacher1 123456 2
+student1 111111 1
+teacher1 222222 2

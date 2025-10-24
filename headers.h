@@ -15,19 +15,22 @@
 using namespace std;
 
 //登录用户结构体
-typedef struct {
-	string account;
-	string password;
-	string role;
-}users;
+struct users {
+    string account;
+    string password;
+    string role;
+
+    users(const string& acc = "", const string& pwd = "", const string& role = "")
+        : account(acc), password(pwd), role(role) {
+    }
+};
 
 //登录模块声明
 vector<users> readUserData();
-bool account(int role, users* user);
+string inputAccount();
 string getPasswordHidden(const string& prompt);
-bool password(int role, users* user);
 int login(int Try, int role, users* user);
-int verifyAccountPassword(const vector<users>& userList, const users* currentUser, int expectedRole);
-int getUserRole(const vector<users>& userList, const string& account); 
+int verifyAccountPassword(const vector<users>& userList, const string& account, const string& password, int expectedRole);
+int getUserRole(const vector<users>& userList, const string& account);
 #endif
 
