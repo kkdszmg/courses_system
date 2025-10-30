@@ -123,16 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="login.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="源77.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="admin_user.txt" />
-    <Text Include="users.txt" />
-    <Text Include="tec_user.txt" />
+    <Text Include="courses.txt" />
+    <Text Include="students.txt" />
+    <Text Include="teachers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
